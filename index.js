@@ -5,7 +5,6 @@ var srv = require('./server'),
 let apollo;
 
 function malta_apollo_srv(obj, options) {   
-    console.log('called') 
     let self = this,
         start = new Date(),
         msg;
