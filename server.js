@@ -106,7 +106,7 @@ class server {
         this.solveParams();
         this.srv = new ApolloServer(this.srvParams);
         this.srv.listen().then(({ url }) => {
-            console.log(`🚀 ${this.name.blue()} on ${url} (${url}/graphql)`);
+            console.log(`🚀 ${this.name.blue()} on ${url} (${url}graphql)`);
         });
     }
 }
