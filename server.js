@@ -106,10 +106,15 @@ class server {
         if (this.started) return;
         this.started = true;
         this.solveParams();
-        this.srv = new ApolloServer(this.srvParams);
-        this.srv.listen({port : this.port, host: this.host}).then(({ url }) => {
-            console.log(`🚀 ${this.name.blue()} on ${url} (${url}graphql)`);
-        });
+        try {
+            this.srv = new ApolloServer(this.srvParams);
+            this.srv.listen({port : this.port, host: this.host}).then(({ url }) => {
+                console.log(`🚀 ${this.name.blue()} on ${url} (${url}graphql)`);
+            });
+        } catch (e) {
+            console.log('ERROR: Something looks wrong in the configuration:')
+            console.log(e)
+        }
     }
 }
 
