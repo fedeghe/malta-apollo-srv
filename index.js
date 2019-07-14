@@ -7,6 +7,7 @@ let apollo;
 function malta_apollo_srv(obj, options) {   
     let self = this,
         start = new Date(),
+        pluginName = path.basename(path.dirname(__filename)),
         msg;
     
     apollo = apollo || srv.getServer(options);
@@ -14,7 +15,7 @@ function malta_apollo_srv(obj, options) {
     
     return function (solve, reject) {
         solve(obj);
-        msg = 'Apollo';
+        msg = `plugin ${pluginName.white()}`;
         self.notifyAndUnlock(start, msg);
     }
 }
