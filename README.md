@@ -11,7 +11,8 @@ Parameters :
     - **types** : a folder (relative to malta execution one) where an index.js will export all needed types  
     - **resolvers** : a folder (relative to malta execution one) where an index.js will export all needed resolvers  
     - **context**: a path to a file that will export the needed context to be used in Apollo
-
+    - port: this is optional, default is 4000
+    - host: this is optional, default is localhost
 
 Sample usage:  
 ```

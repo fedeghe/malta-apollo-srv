@@ -13,6 +13,8 @@ class server {
         this.srv = null;
         this.hot = !!hot;
         this.params = params || {};
+        this.port = this.params.port || 4000;
+        this.host = this.params.host || 'localhost';
         this.dir = process.cwd();
         this.name = path.basename(path.dirname(__filename));
         this.started = false;
@@ -105,7 +107,7 @@ class server {
         this.started = true;
         this.solveParams();
         this.srv = new ApolloServer(this.srvParams);
-        this.srv.listen().then(({ url }) => {
+        this.srv.listen({port : this.port, host: this.host}).then(({ url }) => {
             console.log(`🚀 ${this.name.blue()} on ${url} (${url}graphql)`);
         });
     }
