@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    Star Wars movies:
+    <p>search for title: <input type="text" id="search" /></p>
+    <div id="target"></div>
+    <script>
+        (function () {
+            /*
+            [Malta] js/request.js
+            */
+            function request(query, then) {
+                var xhr = new XMLHttpRequest();
+                xhr.responseType = 'json';
+                xhr.open("POST", 'http://localhost:4000');
+                xhr.setRequestHeader("Content-Type", "application/json");
+            
+                xhr.onload = function () {
+                    const data = xhr.response;
+                    then(data)
+                }
+                xhr.send(JSON.stringify(query));
+            }
+            
+            
+            
+            /*
+            [Malta] js/movies.js
+            */
+            var query = queryBuilder(),
+                search = document.getElementById('search'),
+                target = document.getElementById('target');
+            function queryBuilder(searchFor) {
+                var search = ''
+                if (searchFor) {
+                    search = `(search:"${searchFor}")`
+                }
+                var q =  `{
+                    movies${search}{
+                        title,
+                        date
+                        poster,
+                        ref,
+                        director{
+                            name
+                            ref
+                        }
+                        roles{
+                            actor{
+                                name
+                                ref
+                            }
+                            character{
+                                name
+                                ref
+                            }
+                        }
+                    }
+                }`
+                return { query: q };
+            }
+            
+            function render(response) {
+                var movies = response.data.movies,
+                    len = movies.length;
+                target.innerHTML = '';
+                movies.forEach(m => renderMovie(m));
+            }
+            
+            function renderMovie(movie) {
+                var main = document.createElement('div'),
+                    title = document.createElement('h3'),
+                    poster = document.createElement('img'),
+                    posterAnchor = document.createElement('a'),
+            
+                    directorLabel = document.createElement('label'), 
+                    director = document.createElement('a'), 
+                    date = document.createElement('p'), 
+                    actors = document.createElement('ul'),
+                    others = document.createElement('li');
+                main.className = 'movie';
+            
+                director.innerText = movie.director.name;
+                director.setAttribute('href', movie.director.ref);
+                directorLabel.innerText = 'Director: ';
+                date.innerText = 'Date: ' + movie.date;
+            
+                title.innerText = movie.title;
+                main.appendChild(title);
+                main.appendChild(directorLabel);
+                main.appendChild(director);
+                main.appendChild(date);
+            
+                if (movie.poster) {
+                    posterAnchor.setAttribute('href', movie.ref)
+                    posterAnchor.setAttribute('target', '_blank')
+                    poster.setAttribute('src', movie.poster);
+                    posterAnchor.appendChild(poster);
+                    main.appendChild(posterAnchor);
+                }
+                movie.roles.forEach(role => {
+                    var cnt = document.createElement('li'),
+                        playing = document.createElement('span'), 
+                        aActor = document.createElement('a'),
+                        aCharacter = document.createElement('a');
+            
+                    aActor.setAttribute('href', role.actor.ref);
+                    aActor.setAttribute('target', '_blank');
+                    aCharacter.setAttribute('href', role.character.ref);
+                    aCharacter.setAttribute('target', '_blank');
+                    aActor.innerText = role.actor.name;
+                    aCharacter.innerText = role.character.name;
+                    playing.innerText = ' as ';
+                    cnt.appendChild(aActor)
+                    cnt.appendChild(playing)
+                    cnt.appendChild(aCharacter)
+                    actors.appendChild(cnt);
+                });
+                others.innerText = '...and many others';
+                actors.appendChild(others);
+                main.appendChild(actors);
+                target.appendChild(main);
+            }
+            
+            request(query, render)
+            
+            
+            search.addEventListener('change', function (e) {
+                var value = e.target.value || null;
+                request(queryBuilder(value), render)
+            })
+        })();
+    </script>
+<script>(function () {
+			var t = window.setInterval(function () {
+				var s = document.createElement('script'),
+					srvHost = "http://127.0.0.1",
+					srvPort = 1234;
+				s.onload = function () {document.body.removeChild(s);};
+				s.onerror = function () {
+					document.body.removeChild(s);
+					console.log('Looks like Malta is not running')
+					window.clearInterval(t);
+				};
+				s.src = srvHost + ':' + srvPort + "?" + +new Date;
+				document.body.appendChild(s);
+			}, 1000);
+		})()</script></body>
+
+</html>

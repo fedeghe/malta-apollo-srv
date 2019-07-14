@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name": "Darth Vader",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0001190?ref_=ttfc_fc_cl_t9"
+    },
+    {
+        "id": 2,
+        "name": "Luke Skywalker",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0000434?ref_=ttfc_fc_cl_t1"
+    },
+    {
+        "id": 3,
+        "name": "Ben Obi-Wan Kenobi",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0000027?ref_=ttfc_fc_cl_t5"
+    },
+    {
+        "id": 4,
+        "name": "Han Solo",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0000148?ref_=ttfc_fc_cl_t2"
+    },
+    {
+        "id": 5,
+        "name": "R2-D2",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0048652?ref_=ttfc_fc_cl_t7"
+    },
+    {
+        "id": 6,
+        "name": "Princess Leila ORgana",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0000402?ref_=ttfc_fc_cl_t3"
+    },
+    {
+        "id": 7,
+        "name": "Uncle Owen",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0114436?ref_=ttfc_fc_cl_t10"
+    },
+    {
+        "id": 8,
+        "name": "C-3PO",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0000355?ref_=ttfc_fc_cl_t6"
+    },
+    {
+        "id": 9,
+        "name": "Chewbacca",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0562679?ref_=ttfc_fc_cl_t8"
+    },
+    {
+        "id": 10,
+        "name": "Grand Moff Tarkin",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0001088?ref_=ttfc_fc_cl_t4"
+    },
+    {
+        "id": 11,
+        "name": "Lando Calrissian",
+        "ref": "https://www.imdb.com/title/tt0080684/characters/nm0001850?ref_=ttfc_fc_cl_t4"
+    },
+    {
+        "id": 12,
+        "name": "Yoda (voice)",
+        "ref": "https://www.imdb.com/title/tt0080684/characters/nm0000568?ref_=ttfc_fc_cl_t9"
+    },
+    {
+        "id": 13,
+        "name": "R2-D2 / Paploo",
+        "ref": "https://www.imdb.com/title/tt0076759/characters/nm0048652?ref_=ttfc_fc_cl_t7"
+    }
+]

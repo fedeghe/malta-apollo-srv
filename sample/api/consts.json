@@ -1,0 +1,10 @@
+{
+    "IP": "127.0.0.1",
+    "PORT": 8887,
+    "PATHS": {
+        "directors": "/directors",
+        "actors": "/actors",
+        "movies": "/movies",
+        "characters": "/characters"
+    }
+}

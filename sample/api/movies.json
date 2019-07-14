@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "title": "Star Wars: Episode IV - A New Hope",
+        "date": "25/5/1977",
+        "director": 1,
+        "ref": "https://www.imdb.com/title/tt0076759/?ref_=fn_al_tt_1",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+        "roles": [
+            {
+                "character": 2,
+                "actor": 2
+            },
+            {
+                "character": 4,
+                "actor": 3
+            },
+            {
+                "character": 6,
+                "actor": 4
+            },
+            {
+                "character": 10,
+                "actor": 8
+            },
+            {
+                "character": 3,
+                "actor": 5
+            },
+            {
+                "character": 8,
+                "actor": 9
+            },
+            {
+                "character": 5,
+                "actor": 10
+            },
+            {
+                "character": 9,
+                "actor": 6
+            },
+            {
+                "character": 1,
+                "actor": 1
+            },
+            {
+                "character": 7,
+                "actor": 7
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "date": "21/5/1980",
+        "director": 2,
+        "ref": "https://www.imdb.com/title/tt0080684/?ref_=fn_al_tt_1",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+        "roles": [
+            {
+                "character": 2,
+                "actor": 2
+            },
+            {
+                "character": 4,
+                "actor": 3
+            },
+            {
+                "character": 6,
+                "actor": 4
+            },
+            {
+                "character": 3,
+                "actor": 5
+            },
+            {
+                "character": 8,
+                "actor": 9
+            },
+            {
+                "character": 5,
+                "actor": 10
+            },
+            {
+                "character": 9,
+                "actor": 6
+            },
+            {
+                "character": 1,
+                "actor": 1
+            },
+            {
+                "character": 11,
+                "actor": 11
+            },
+            {
+                "character": 12,
+                "actor": 12
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "date": "25/5/1983",
+        "director": 3,
+        "ref": "https://www.imdb.com/title/tt0086190/?ref_=fn_al_tt_1",
+        "poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+        "roles": [
+            {
+                "character": 2,
+                "actor": 2
+            },
+            {
+                "character": 4,
+                "actor": 3
+            },
+            {
+                "character": 6,
+                "actor": 4
+            },
+            {
+                "character": 3,
+                "actor": 5
+            },
+            {
+                "character": 8,
+                "actor": 9
+            },
+            {
+                "character": 13,
+                "actor": 10
+            },
+            {
+                "character": 9,
+                "actor": 6
+            },
+            {
+                "character": 1,
+                "actor": 1
+            },
+            {
+                "character": 11,
+                "actor": 11
+            },
+            {
+                "character": 12,
+                "actor": 12
+            }
+        ]
+    }
+]

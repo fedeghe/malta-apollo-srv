@@ -32,3 +32,4 @@ Malta.get().check([
     '-options=showPath:false,watchInterval:500,verbose:0'
 ]).start();
 ```
+a full example can be found <a href="https://github.com/fedeghe/malta-apollo-srv/tree/master/sample">here</a>

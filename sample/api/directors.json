@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "George Lucas",
+        "ref": "https://it.wikipedia.org/wiki/George_Lucas"
+    },
+    {
+        "id": 2,
+        "name": "Irvin Kershner",
+        "ref": "https://it.wikipedia.org/wiki/Irvin_Kershner"
+    },
+    {
+        "id": 3,
+        "name": "Richard Marquand",
+        "ref": "https://it.wikipedia.org/wiki/Richard_Marquand"
+    },
+    {
+        "id": 4,
+        "name": "Irvin Kershner",
+        "ref": "https://it.wikipedia.org/wiki/Irvin_Kershner"
+    }
+]

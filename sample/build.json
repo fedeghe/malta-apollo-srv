@@ -1,0 +1,7 @@
+{
+    "EXE": [
+        "mkdir -p dist/js dist/css"
+    ],
+    "source/index.html": "dist -plugins=malta-apollo-srv[types:'source/graphql/types',resolvers:'source/graphql/resolvers',context:'source/graphql/context']...malta-dev-srv[folder:'dist']...malta-browser-refresh[files:'relative'] -options=placeholderMode:'func'",
+    "source/less/style.less": "dist/css -plugins=malta-less -options=placeholderMode:'func'"
+}
