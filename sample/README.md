@@ -6,7 +6,7 @@ First of all I set up a small api server in the `api` folder. Once started, it p
 - /directors to retrieve all directors
 - /characters to retrieve all characters
 
-This is absolutely arguable, but here it is all I needed, in fact all this sample aims to show is how to use the plugin solving the n+1 problem in a commo way. Thus, first thing, start the api server(all commands have to be run within the sample folder):  
+This is absolutely arguable, but here it is all I needed, in fact all this sample aims to show is how to use the plugin solving the n+1 problem in a common way. Thus, first thing, start the api server(all commands have to be run within the sample folder):  
 
 ```
 yarn && yarn apistart
