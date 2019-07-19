@@ -21,7 +21,7 @@
     "dependencies": {
         "apollo-server": "^2.6.8",
         "graphql": "^14.4.2",
-        "malta": ">=4.0.2"
+        "malta": "^4.0.4"
     },
     "main": "index.js"
 }
