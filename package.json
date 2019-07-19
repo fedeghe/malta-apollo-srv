@@ -1,6 +1,6 @@
 {
     "name": "malta-apollo-srv",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "Malta plugin to start apollo server.",
     "repository": {
         "type": "git",
