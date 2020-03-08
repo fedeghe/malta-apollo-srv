@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-apollo-srv.svg)](http://badge.fury.io/js/malta-apollo-srv)
-[![Dependencies](https://david-dm.org/fedeghe/malta-apollo-srv.svg)](https://david-dm.org/fedeghe/malta-apollo-srv)
 [![npm downloads](https://img.shields.io/npm/dt/malta-apollo-srv.svg)](https://npmjs.org/package/malta-apollo-srv)
 [![npm downloads](https://img.shields.io/npm/dm/malta-apollo-srv.svg)](https://npmjs.org/package/malta-apollo-srv)  
 ---  

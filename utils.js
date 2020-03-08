@@ -1,9 +1,5 @@
 /* eslint-disable no-console */
 const fs = require('fs'),
-    // eslint-disable-next-line quotes
-    NL = "\n",
-
-
     /**
      * Gets the file time.
      *

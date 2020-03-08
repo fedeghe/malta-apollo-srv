@@ -1,19 +1,19 @@
-var srv = require('./server'),
-    path = require('path'),
-    fs = require('fs');
+const srv = require('./server'),
+    path = require('path');
 
 let apollo;
 
 function malta_apollo_srv(obj, options) {   
-    let self = this,
+    const self = this,
         start = new Date(),
-        pluginName = path.basename(path.dirname(__filename)),
-        msg;
+        pluginName = path.basename(path.dirname(__filename));
+
+    let msg;
     
     apollo = apollo || srv.getServer(options);
     !apollo.started && apollo.start();
     
-    return function (solve, reject) {
+    return (solve, reject) => {
         solve(obj);
         msg = `plugin ${pluginName.white()}`;
         self.notifyAndUnlock(start, msg);

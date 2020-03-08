@@ -1,8 +1,5 @@
 
-var http = require('http'),
-    url = require('url'),
-    fs = require('fs'),
-    path = require('path'),
+const path = require('path'),
     utils = require('./utils'),
     { ApolloServer, gql } = require('apollo-server');
 
