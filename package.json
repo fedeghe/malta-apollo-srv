@@ -1,6 +1,6 @@
 {
     "name": "malta-apollo-srv",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "description": "Malta plugin to start apollo server.",
     "repository": {
         "type": "git",
@@ -20,8 +20,7 @@
     },
     "dependencies": {
         "apollo-server": "^2.11.0",
-        "graphql": "^14.6.0",
-        "malta": "4.1.19"
+        "graphql": "^14.6.0"
     },
     "main": "index.js"
 }
