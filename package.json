@@ -20,7 +20,8 @@
     },
     "dependencies": {
         "apollo-server": "^2.11.0",
-        "graphql": "^14.6.0"
+        "graphql": "^14.6.0",
+        "malta": "4.1.19"
     },
     "main": "index.js"
 }
