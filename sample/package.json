@@ -10,11 +10,11 @@
         "reinstall": "yarn add ../malta-apollo-srv/"
     },
     "dependencies": {
-        "malta": "^4.0.3",
-        "malta-apollo-srv": "^1.0.4",
-        "malta-browser-refresh": "^1.2.2",
-        "malta-dev-srv": "^1.1.3",
-        "malta-less": "^1.0.8",
+        "malta": "4.1.19",
+        "malta-apollo-srv": "1.0.15",
+        "malta-browser-refresh": "1.2.9",
+        "malta-dev-srv": "1.1.7",
+        "malta-less": "1.0.11",
         "node-fetch": "^2.6.0",
         "restify": "^8.3.3",
         "restify-cors-middleware": "^1.1.1",
