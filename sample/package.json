@@ -15,7 +15,7 @@
         "malta-browser-refresh": "1.2.9",
         "malta-dev-srv": "1.1.7",
         "malta-less": "1.0.11",
-        "node-fetch": "^2.6.0",
+        "node-fetch": "^2.6.7",
         "restify": "^8.3.3",
         "restify-cors-middleware": "^1.1.1",
         "restify-plugins": "^1.6.0"
