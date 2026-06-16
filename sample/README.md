@@ -1,6 +1,6 @@
 ## Sample usage of malta-apollo-srv plugin
 
-First of all I set up a small api server in the `api` folder. Once started, it provides some rest GET endpoints:  
+First of all I set up a small Express-based API server in the `api` folder. Once started, it provides some REST GET endpoints:  
 - /movies to retrieve all star war movies
 - /actors to retrieve all actors
 - /directors to retrieve all directors
@@ -43,6 +43,6 @@ yarn build
 ```
 In all parameters are right the apollo server will be started and we'll see on the console something like:
 ```
-🚀 malta-apollo-srv on http://localhost:4000/ (http://localhost:4000//graphql)
+🚀 malta-apollo-srv on http://localhost:4000/ (http://localhost:4000/graphql)
 ```
 by the way, in this sample I am also using `malta-dev-srv` to be able to serve the `dist/index.html` on **http://localhost:3001** which contains the consuming sample. Aside one can still access the <a href="http://localhost:4000/graphql">graphql</a> straight in the browser to test queries.
