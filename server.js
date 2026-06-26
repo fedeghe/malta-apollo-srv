@@ -34,7 +34,7 @@ class server {
                 let x = Object.keys(tmp).reduce((acc, el) => {
                     acc.push(tmp[el]);
                     return acc;
-                }, []).join(`\n`).replace(/@oneOf/g, '');
+                }, []).join(`\n`);
 
                 this.srvParams.typeDefs = gql(x);
                 this.hot && this.watching.push(resolvedPath);
